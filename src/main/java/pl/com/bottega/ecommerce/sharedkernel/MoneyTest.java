@@ -24,4 +24,14 @@ public class MoneyTest {
 			assertThat(t1.add(t2),is(equalTo(expected)));
 		}
 		
+		@Test
+			public void test_subtract_value_from_other_equel_expected_value() {
+				Money t1 = new Money(20,"PLN");
+				Money t2 = new Money(70,"PLN");
+				Money expected = new Money(50,"PLN");
+				
+				assertThat(t2.subtract(t1),is(equalTo(expected)));
+			}
+
+
 }
