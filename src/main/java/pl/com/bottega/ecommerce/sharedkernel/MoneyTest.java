@@ -33,5 +33,11 @@ public class MoneyTest {
 				assertThat(t2.subtract(t1),is(equalTo(expected)));
 			}
 
-
+		@Test
+			public void test_greaterThan_to_t1value_and_t2value() {
+				Money t1 = new Money(55,"PLN");
+				Money t2 = new Money(56,"PLN");
+				
+				assertThat(t2.greaterThan(t1),is(true));
+			}
 }
