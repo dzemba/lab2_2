@@ -2,7 +2,11 @@ package pl.com.bottega.ecommerce.sharedkernel;
 
 import static org.junit.Assert.*;
 
+import java.math.BigDecimal;
+import java.math.BigDecimal;
+
 import org.junit.Test;
+
 import static org.hamcrest.CoreMatchers.*;
 
 public class MoneyTest {
@@ -75,4 +79,5 @@ public class MoneyTest {
 			
 			assertThat(t1.equals(t2),is(true));
 		}
+		
 }
