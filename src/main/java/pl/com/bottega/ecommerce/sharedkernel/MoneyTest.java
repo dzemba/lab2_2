@@ -9,8 +9,8 @@ public class MoneyTest {
 
 		@Test
 		public void test_multiply_value_by_other_equel_expected_value() {
-			Money t1 = new Money(10,"PLN");
-			Money expected = new Money(100,"PLN");
+			Money t1 = new Money(9,"PLN");
+			Money expected = new Money(90,"PLN");
 			
 			assertThat(t1.multiplyBy(10),is(equalTo(expected)));
 		}
